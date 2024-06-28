@@ -30,6 +30,7 @@ public class Brecho {
 		// Imprime produtos ordenados
 		for (int i=1; i<=produtos.size(); i++) {
 			System.out.println("Codigo = " + produtos.get(i).getCodigo() + " Nome = " + produtos.get(i).getNome() + " Valor = " + produtos.get(i).getValor());
+			i++;
 		}
 		
 		// Calcula Média
@@ -37,7 +38,6 @@ public class Brecho {
 		int i = 1;
 		while (i<=produtos.size()) {
 			media = produtos.get(i).getValor();
-			i++;
 		}
 		media = media / i;
 		System.out.println("Media de Valores = " + media);
